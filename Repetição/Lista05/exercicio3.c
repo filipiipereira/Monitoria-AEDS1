@@ -14,9 +14,7 @@ int main() {
     float media;
     bool erro;
     if(n == 0){
-        media = 0;
-        menor_nota = 0;
-        maior_nota = 0;
+        media = maior_nota = menor_nota = 0;
     }
     else{
         do{
@@ -26,8 +24,7 @@ int main() {
             if(erro) printf("Entrada invalida, tente novamente!\n");
         }while(erro);
         soma += nota;
-        menor_nota = nota;
-        maior_nota = nota;
+        menor_nota = menor_nota = nota;
         if(nota >= 60){
                 printf("Aprovado\n");
         }
