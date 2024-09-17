@@ -53,8 +53,8 @@ int main(){
             if(sexo == 'm') quantidadeHomens++;
             else quantidadeMulheres++;
         }
-        percentualHomens = (float) quantidadeHomens / numeroAlunos;
-        percentualMulheres = (float) quantidadeMulheres / numeroAlunos;
+        percentualHomens = (float) 100 * quantidadeHomens / numeroAlunos;
+        percentualMulheres = (float) 100 * quantidadeMulheres / numeroAlunos;
     }
     printf("O percentual de homens eh %.2f%%. O de mulheres eh %.2f%%. O aluno mais velho tem %d anos e o mais novo tem %d anos. %d aluno(s) eh(sao) maiores de idade.", percentualHomens ,percentualMulheres, idadeMaisVelho, idadeMaisNovo, quantidadeMaiores);
     return 0;

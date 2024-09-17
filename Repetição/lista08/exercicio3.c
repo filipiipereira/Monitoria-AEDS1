@@ -1,10 +1,12 @@
-int main(){
+#include <stdio.h>
 
+int main(){
     int n;
     printf("Digite o numero: ");
     scanf("%d", &n);
     if(n == 0) printf("Todos os inteiros - {0}");
     else {
+        if(n < 0) n = -n;
         printf("Os divisores sao: 1, -1");
         int limite_maximo = n/2;
         for(int i = 2; i <= limite_maximo; i++){
@@ -12,6 +14,5 @@ int main(){
         }
         printf(", %d, %d", n, -n);
     }
-
-        return 0;
+    return 0;
 }
